@@ -1,0 +1,12 @@
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$.ajax({
+		url: "https://api.forecast.io/forecast/" + "e964d33cde30c141523b46f7f27e0007" + "/" + -22.986450 + "," + -43.205995 + "," + Math.round(Date.now()/1000) + "?callback=?",
+		success: function (){
+			alert('oi');
+		}
+	});
+});
+</script>
